@@ -7,7 +7,8 @@
         "start": "set NODE_ENV=dev && npx nodemon --watch src server_build/bundle.js",
         "build:client": "npx webpack build --config ./webpack/webpack.client.js --watch",
         "build:server": "npx webpack build --config ./webpack/webpack.server.js --watch",
-        "commitlint": "commitlint --config commitlint.config.js -e -V"
+        "commitlint": "commitlint --config commitlint.config.js -e -V",
+        "lint": "npx eslint src/**"
     },
     "repository": {
         "type": "git",
